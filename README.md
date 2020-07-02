@@ -48,10 +48,10 @@
     ` DONE  Compiled successfully in 10347ms`
     说明启动成功
     
-10. 打开https://www.xxx.com:8081/createroom创建一个
+10. 打开https://www.xxx.com:8081/createroom 创建一个分享
 	页面展示（影院号和观影码），点击（创建）会请求麦克风和桌面的授权，授权后创建成功，点击右上角（分享观影码），分享观看地址。
 
-11. 观看者访问https://www.xxx.com:8081/joinroom?roomId=xx加入房间后可以进行语音聊天，且能看到分享者的屏幕
+11. 观看者访问https://www.xxx.com:8081/joinroom?roomId=xx 加入房间后可以进行语音聊天，且能看到分享者的屏幕
     
 # vue常用命令如下
 
