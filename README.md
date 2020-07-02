@@ -1,5 +1,6 @@
 ##简介
 基于webrtc的一对一屏幕分享项目的web client部分
+安装client之前先安装server部分：https://github.com/zph123/screenShareServer
 
 ## 安装说明
 
@@ -15,15 +16,11 @@
 
     `cd xxxxx`   
     
-4. 下载依赖
-
-    `npm install`
-   
-6. 复制配置文件
+4. 复制配置文件
 
     `cp .env.example .env` 
 
-7. 更改配置文件.env，把xxx替换成自己的内容
+5. 更改配置文件.env，把xxx替换成自己的内容
     ```
 	VUE_APP_URL_HOST = www.xxx.com
 	VUE_APP_URL_PORT = 8081
@@ -39,8 +36,11 @@
 	#没有有stun的时候，默认为空，局域网内可通讯
 	VUE_APP_WEBRTC_PCCONFIG = ''
     ```
+6. 下载依赖
+
+    `npm install`
  
-8. 启动进程web页面服务
+7. 启动进程web页面服务
  
     输入
     `npm run serve`
@@ -48,10 +48,10 @@
     ` DONE  Compiled successfully in 10347ms`
     说明启动成功
     
-10. 打开https://www.xxx.com:8081/createroom 创建一个分享
+8. 打开https://www.xxx.com:8081/createroom 创建一个分享
 	页面展示（影院号和观影码），点击（创建）会请求麦克风和桌面的授权，授权后创建成功，点击右上角（分享观影码），分享观看地址。
 
-11. 观看者访问https://www.xxx.com:8081/joinroom?roomId=xx 加入房间后可以进行语音聊天，且能看到分享者的屏幕
+9. 观看者访问https://www.xxx.com:8081/joinroom?roomId=xx 加入房间后可以进行语音聊天，且能看到分享者的屏幕
     
 # vue常用命令如下
 
